@@ -11,7 +11,7 @@ import com.google.gson.JsonParser;
 
 public class NetflixAPI {
     private static final String BASE_URL = "http://www.omdbapi.com/?apikey=2aa53acd&t="; // Change this to your endpoint
-    private static final int CACHE_SIZE = 1000; // Set the size of the cache (optional)
+    private static final int CACHE_SIZE = 10;
     private static final Map<String, String> cache = new HashMap<>(); // Use a simple HashMap as cache
     private static int cacheHits = 0;
     private static int cacheMisses = 0;
